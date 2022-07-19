@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Для клиента</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
+	<link rel="icon" type="image/x-icon" href="img/vtormet+.ico">
+	<!-- css -->
+	<link href="css/style2.css" rel="stylesheet" />
+	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="css/jcarousel.css" rel="stylesheet" />
+	<link href="css/flexslider.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+    <link href="css/table.css" type="text/css"  />
+
+	<!-- Theme skin -->
+	<link href="skins/default.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<!-- start header -->
+		<header>
+			<div class="navbar navbar-default navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+						<a class="navbar-brand" href="index.html"><span></span><img src="img/logo.png"/></a>
+					</div>
+					<div class="navbar-collapse collapse ">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="rashet.html">Для клиента</a></li>
+    <li class="active"><a href="kompanii.html">О Компании</a></li>
+    <li class="dropdown">
+    <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Услуги <b class=" icon-angle-down"></b></a>
+    <ul class="dropdown-menu">
+    <li><a href="typography.html">Прием черного и цветного металлолома</a></li> 
+    <li><a href="components.html">Демонтаж металлоконструкций</a></li>
+    <li><a href="pricingbox.html">Вывоз металлолома</a></li>
+    <li><a href="utilizacia%20avto.html">Утилизация автотранспорта</a></li>
+    <li><a href="prodazha_metalloloma.html">Продажа металлолома</a></li>
+</ul>
+</li>
+    <li><a href="portfolio.html">Акции и цены</a></li>
+    <li><a href="postavshiki.html">Поставщики</a></li>
+    <li><a href="contact.html">Контакты</a></li>
+    <li><a href="form_registr.php">Регистарация</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end header -->
+		<section id="inner-headline">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="breadcrumb">
+							<li><a href="index.html"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
+							<li class="active">Расчет металлолома</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<article>
+							<div class="post-image">
+								<div class="post-heading">
+									<h3><a>Расчет металлолома</a></h3>
+								</div>
+								<img src="img/rachet.jpg" alt="" />
+							</div>
+                            <script type="text/javascript">
+
+       /*
+        * Функция подсчета стоимости металлолома
+        */
+        function calc() {
+            var type_design = document.getElementById("type_design"); //получаем ссылку на элемент Select (Тип металлолома)
+            var count = document.getElementById("count"); //получаем ссылку на элемент input (Масса)
+            var result = document.getElementById("result"); //получаем ссылку на элемент span, в него будем писать стоимость металлолома
+
+            var price = 0;
+            price += parseInt(type_design.options[type_design.selectedIndex].value);
+            price = parseInt(count.value) * price;
+
+            result.innerHTML = price;
+            
+        }
+
+        </script>
+    
+    <body>
+        <b>Тип металлолома:</b><br/>
+        <select onchange="calc()" id="type_design">
+            <option value="0">Выбрать</option>
+            <option value="13500">3А - Габаритный стальной лом /т</option>
+            <option value="13000">5А - Негабаритный стальной лом /т </option>
+            <option value="13000">17А, 20А - Чугун /т</option>
+            <option value="12500">12А - Смешанный стальной лом /т</option>
+            <option value="8000">16А - Металлическая стружка /т</option>
+            <option value="400">Медь /кг</option>
+            <option value="250">Латунь /кг</option>
+            <option value="85">Алюминий /кг</option>
+            <option value="80">Нержавеющая сталь /кг</option>
+            <option value="75">Свинец/кг</option>
+            <option value="70">Цинк/кг</option>
+        </select><br/>
+        <br/>
+        Масса: <input type="text" id="count" value="1" onchange="calc()" />
+        <div>Стоимость металлолома: <span id="result">0</span> руб.</div>
+
+							
+					</div>
+					
+							
+		
+		</section>
+		<footer>
+			<div class="container">
+    <div class="row">
+    <div class="col-lg-3">
+    <div class="widget">
+    <address>
+    <strong>Наши координаты</strong><br>
+    420034, Республика Татарстан<br>
+    г. Казань, ул. Лесная, д.10 </address>
+<p>
+    <i class="icon-phone"></i> 8 (843) 295-66-90 <br>
+    <i class="icon-envelope-alt"></i> ooo_vtormetplus@mail.ru
+</p>
+</div>
+</div>
+					<div class="col-lg-3">
+    <div class="widget">
+    <strong>Информация</strong><br>
+    <ul class="link-list">
+    <li><a href="rashet.html">Для клиента</a></li>
+    <li><a href="kompanii.html">О компании</a></li>
+    <li><a href="portfolio.html">Акции и цены</a></li>
+    <li><a href="postavshiki.html">Поставщики</a></li>
+    <li><a href="contact.html">Контакты</a></li>
+</ul>
+</div>
+</div>
+    <div class="col-lg-3">
+    <div class="widget">
+    <strong>Услуги</strong><br>
+    <ul class="link-list">
+    <li><a href="typography.html">Прием черного и цветного металлолома</a></li>
+    <li><a href="components.html">Демонтаж металлоконструкций</a></li>
+    <li><a href="pricingbox.html">Вывоз металлолома</a></li>
+    <li><a href="utilizacia%20avto.html">Утилизация автотранспорта</a></li>
+    <li><a href="prodazha_metalloloma.html">Продажа металлолома</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+			<div id="sub-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="copyright">
+								<p>&copy; 2019 ООО Втормет+</p>
+								
+	</div>
+	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+	<!-- javascript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/load.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/jquery.fancybox-media.js"></script>
+	<script src="js/google-code-prettify/prettify.js"></script>
+	<script src="js/portfolio/jquery.quicksand.js"></script>
+	<script src="js/portfolio/setting.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/animate.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>
